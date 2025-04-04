@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- NavBar Container -->
+    <div class="container">
+        <!-- Header section -->
+        <div class="header">
+            <h1>Weather</h1>
+            <!-- Input fields and Button section -->
+            <div class="weather-input">
+                <input type="text" name="city" id="city_input" placeholder="Enter city name">
+                <button type="button" id="searchBtn">
+                    <i class="fa-regular fa-search"></i> Search
+                </button>
+                <button type="button" id="locationBtn">
+                    <i class="bx bx-target-lock"></i> Current Location
+                </button>
+            </div>
+        </div>
+        <!-- Aside container 1 -->
+        <!-- Weather data section -->
+        <div class="weather-data">
+            <!-- Weather left section -->
+            <div class="weather-left">
+                <!-- Card and Icons section -->
+                <div class="card">
+                    <div class="current-weather">
+                        <div class="details">
+                            <p>Now</p>
+                            <h2>___&deg;C</h2>
+                            <p>____</p>
+                        </div>
+                        <div class="weather-icon">
+                            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="weatherIcon">
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Card footer Section -->
+                    <div class="card-footer">
+                        <p><i class="fa-light fa-calendar"></i> ____</p>
+                        <p><i class="fa-light fa-location-dot"></i> ____</p>
+                    </div>
+                </div>
+                <!-- Aside Container 2 -->
+                <!-- Second card section with their items -->
+                <div class="card">
+                    <h2>5 days Forecast</h2>
+                    <div class="day-forecast">
+                        <div class="forecast-item">
+                            <div class="icon-wrapper">
+                                <img src="https://openweathermap.org/img/wn/02d.png" alt="weatherIcon">
+                                <span>___&deg;C</span>
+                            </div>
+                            <P>____</P>
+                            <P>____</P>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="forecast-item">
+                            <div class="icon-wrapper">
+                                <img src="https://openweathermap.org/img/wn/02d.png" alt="weatherIcon">
+                                <span>___&deg;C</span>
+                            </div>
+                            <P>____</P>
+                            <P>____</P>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="forecast-item">
+                            <div class="icon-wrapper">
+                                <img src="https://openweathermap.org/img/wn/02d.png" alt="weatherIcon">
+                                <span>___&deg;C</span>
+                            </div>
+                            <P>____</P>
+                            <P>____</P>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="forecast-item">
+                            <div class="icon-wrapper">
+                                <img src="https://openweathermap.org/img/wn/02d.png" alt="weatherIcon">
+                                <span>___&deg;C</span>
+                            </div>
+                            <P>____</P>
+                            <P>____</P>
+                        </div>
+                        <!-- Card Itmes -->
+                        <div class="forecast-item">
+                            <div class="icon-wrapper">
+                                <img src="https://openweathermap.org/img/wn/02d.png" alt="weatherIcon">
+                                <span>___&deg;C</span>
+                            </div>
+                            <P>____</P>
+                            <P>____</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Container 1 -->
+            <!-- Weather right side -->
+            <div class="weather-right">
+                <h2>Today's Highlights</h2>
+                <div class="highlights">
+                    <!-- Card section-->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Air Quality Index</p>
+                            <p class="air-index aqi-3">Good</p>
+                        </div>
+                        <!-- Card Icon -->
+                        <div class="air-indices">
+                            <i class="fa-regular fa-wind fa-3x"></i>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>PM2.5</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>PM10</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>SO2</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>CO</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>NO</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>NO2</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>NH3</p>
+                                <h2>____</h2>
+                            </div>
+                            <!-- Card Items -->
+                            <div class="item">
+                                <p>O3</p>
+                                <h2>____</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Container 2 -->
+                    <!-- Second Card -->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Sunrise & Sunset</p>
+                        </div>
+                        <!-- Card Items and Icon -->
+                        <div class="sunrise-sunset">
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="fa-light fa-sunrise fa-4x"></i>
+                                </div>
+                                <div>
+                                    <p>Sunrise</p>
+                                    <h2>____</h2>
+                                </div>
+                            </div>
+                            <!-- Card Items and Icon -->
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="fa-light fa-sunset fa-4x"></i>
+                                </div>
+                                <div>
+                                    <p>Sunset</p>
+                                    <h2>____</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mini Container 1 -->
+                    <!-- Third Card -->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Humidity</p>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="card-item">
+                            <i class="fa-light fa-droplet fa-2x"></i>
+                            <h2 id="humidityVal">____%</h2>
+                        </div>
+                    </div>
+                    <!-- Mini Container 2 -->
+                    <!-- Fourth Card -->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Pressure</p>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="card-item">
+                            <i class="fa-light fa-compass fa-2x"></i>
+                            <h2 id="pressureVal">____hPa</h2>
+                        </div>
+                    </div>
+                    <!-- Mini Container 3 -->
+                    <!-- Fifth Card -->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Visibiliity</p>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="card-item">
+                            <i class="fa-light fa-eye fa-2x"></i>
+                            <h2 id="visibilityVal">____km</h2>
+                        </div>
+                    </div>
+                    <!-- Mini Container 4 -->
+                    <!-- Sixth Card -->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Wind Speed</p>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="card-item">
+                            <i class="fa-light fa-location-arrow fa-2x"></i>
+                            <h2 id="windSpeedVal">____m/s</h2>
+                        </div>
+                    </div>
+                    <!-- Mini Container 5 -->
+                    <!-- Seventh Card -->
+                    <div class="card">
+                        <!-- Card Head -->
+                        <div class="card-head">
+                            <p>Humidity</p>
+                        </div>
+                        <!-- Card Items -->
+                        <div class="card-item">
+                            <i class="fa-light fa-temperature-list fa-2x"></i>
+                            <h2 id="feelsVal">____&deg;C</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Container -->
+                <h2>Today at</h2>
+                <div class="hourly-forecast">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="card">
+                        <p>9 AM</p>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="weatherIcon">
+                        <p>___&deg;C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
