@@ -58,3 +58,5 @@ A good API integration must handle errors efficiently:
 Invalid City Name: If the city does not exist, an error message appears.
 API Connectivity Issues: If there’s a network problem, an error message is logged.
 Geolocation Denied: If the user denies location access, an alert is triggered.
+# OUTPUT
+![Image](https://github.com/user-attachments/assets/d2c49484-14bf-4831-b3fd-6d095e44cfd1)
